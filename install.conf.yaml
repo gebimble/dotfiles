@@ -1,0 +1,21 @@
+- defaults:
+    link:
+        relink: true
+
+- link:
+    ~/.config/alacritty: alacritty
+    ~/.config/broot: broot
+    ~/.config/gh: gh
+    ~/.gitconfig: .gitconfig
+    ~/.config/lazygit: lazygit
+    ~/.oh-my-posh.nu: .oh-my-posh.nu
+    ~/.config/nvim: nvim
+    ~/.config/nushell: nushell
+    ~/.config/pypoetry: pypoetry
+    ~/.config/rofi: rofi
+    ~/.config/tmux: tmux
+    ~/.zoxide.nu: .zoxide.nu
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    

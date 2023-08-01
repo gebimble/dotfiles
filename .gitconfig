@@ -1,0 +1,7 @@
+[user]
+	email = joseph.beaver@gmail.com
+	name = Joe Beaver
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
