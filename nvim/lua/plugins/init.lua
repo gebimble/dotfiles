@@ -21,11 +21,6 @@ return require("packer").startup(function(use)
         -- end,
     })
 
-    -- -- Leap is a general-purpose motion plugin for Neovim
-    -- use({
-    --     "ggandor/leap.nvim"
-    -- })
-
     -- `flash.nvim` lets you navigate your code with search labels, enhanced character motions, and Treesitter integration.
     use({
         "folke/flash.nvim"
@@ -163,6 +158,36 @@ return require("packer").startup(function(use)
         "christoomey/vim-tmux-navigator",
         lazy = false
     })
+
+    -- use ({
+    --     "ellisonleao/glow.nvim",
+    --     config = function()
+    --         require("glow").setup()
+    --     end
+    -- })
+
+    -- install without yarn or npm
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function()
+            vim.fn["mkdp#util#install"]()
+        end,
+    })
+
+    use({
+        "ellisonleao/glow.nvim",
+        config = function()
+            require("glow").setup()
+        end
+    })
+    -- -- Soil for a plant (UML)
+    -- use({
+    --     "javiorfo/nvim-soil",
+    --     requires = {
+    --         -- Optional for puml syntax highlighting:
+    --         use 'javiorfo/nvim-nyctophilia'
+    --     }
+    -- })
 
     --
     --

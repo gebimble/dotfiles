@@ -49,3 +49,5 @@ require('pylsp-config')
 require('zen-mode-config')
 require('lualine-config')
 require('neodim-config')
+
+-- require('markdown-preview-nvim-config')
