@@ -1,6 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-    - /home/joe/.config/nvim
+- /home/joe/.dotfiles
+- /home/joe/Documents/libraries-io-scraper
 startuppopupversion: 5
 customcommandshistory: []
 hidecommandlog: false
+ignorewhitespaceindiffview: false
