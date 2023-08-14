@@ -142,6 +142,81 @@ draw_bold_text_with_bright_colors: false
 # # and cursor.background colors, otherwise invert the colors of the cursor.
 # custom_cursor_colors: true
 #
+# Monokai Classic
+# colors:
+#   primary:
+#     background: '#272822'
+#     foreground: '#F8F8F2'
+#
+#   normal:
+#    black:   '#272822'
+#    red:     '#F92672'
+#    green:   '#A6E22E'
+#    yellow:  '#F4BF75'
+#    blue:    '#66D9EF'
+#    magenta: '#AE81FF'
+#    cyan:    '#A1EFE4'
+#    white:   '#F8F8F2'
+#
+#   bright:
+#    black:   '#75715E'
+#    red:     '#F92672'
+#    green:   '#A6E22E'
+#    yellow:  '#F4BF75'
+#    blue:    '#66D9EF'
+#    magenta: '#AE81FF'
+#    cyan:    '#A1EFE4'
+#    white:   '#F9F8F5'
+# Monokai Soda
+colors:
+  primary:
+    background: '#1a1a1a'
+    foreground: '#c4c5b5'
+
+  normal:
+    black:   '#1a1a1a'
+    red:     '#f4005f'
+    green:   '#98e024'
+    yellow:  '#fa8419'
+    blue:    '#9d65ff'
+    magenta: '#f4005f'
+    cyan:    '#58d1eb'
+    white:   '#c4c5b5'
+
+  bright:
+    black:   '#625e4c'
+    red:     '#f4005f'
+    green:   '#98e024'
+    yellow:  '#e0d561'
+    blue:    '#9d65ff'
+    magenta: '#f4005f'
+    cyan:    '#58d1eb'
+    white:   '#f6f6ef'
+# Monokai Pro
+# colors:
+#   primary:
+#     background: '#2D2A2E'
+#     foreground: '#FCFCFA'
+#
+#   normal:
+#     black:   '#403E41'
+#     red:     '#FF6188'
+#     green:   '#A9DC76'
+#     yellow:  '#FFD866'
+#     blue:    '#FC9867'
+#     magenta: '#AB9DF2'
+#     cyan:    '#78DCE8'
+#     white:   '#FCFCFA'
+#
+#   bright:
+#     black:   '#727072'
+#     red:     '#FF6188'
+#     green:   '#A9DC76'
+#     yellow:  '#FFD866'
+#     blue:    '#FC9867'
+#     magenta: '#AB9DF2'
+#     cyan:    '#78DCE8'
+#     white:   '#FCFCFA'
 # # Colors (Monokai Pro)
 # colors:
 #   # Default colors
