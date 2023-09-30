@@ -87,3 +87,16 @@ $env.NU_PLUGIN_DIRS = [
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
  $env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.pyenv/shims','/home/joe/.local/bin','/home/joe/.pyenv/bin','/home/joe/.cargo/bin'])
 
+# gitignore function
+def gi [language] {
+  http get $"https://www.toptal.com/developers/gitignore/api/($language)"
+}
+
+# zfs cleaning functions
+def zfslistmonth [pool] {
+  zfs list -r -t snapshot -o name $pool | rg 'monthly'
+  }
+
+def zfsdeletemonth [pool, month] {
+  zfs list -r -t snapshot -o name pool | rg -v 'monthly-$(month)' | sudo xargs -n1 zfs destroy -R
+  }
