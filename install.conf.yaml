@@ -18,5 +18,19 @@
     ~/.zoxide.nu: .zoxide.nu
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    
+  -
+    description: Installing submodules
+    command: git submodule update --init --recursive
+
+  - 
+    description: Update apt
+    command: |
+      sudo apt update
+    stdout: true
+    stdin: true
+  - 
+    description: Install packages
+    command: |
+      . apt/install.sh
+    stdout: true
+    stdin: true
