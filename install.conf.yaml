@@ -1,3 +1,4 @@
+
 - defaults:
     link:
         relink: true
@@ -7,7 +8,7 @@
     ~/.config/broot: broot
     ~/.config/gh: gh
     ~/.gitconfig: .gitconfig
-    ~/.config/lazygit: lazygit
+    ~/.config/lazygit: lazygitj
     ~/.oh-my-posh.nu: oh-my-posh/.oh-my-posh.nu
     ~/.mytheme.omp.json: oh-my-posh/.mytheme.omp.json
     ~/.config/nvim: nvim
@@ -19,18 +20,71 @@
 
 - shell:
   -
+    description: Install rustup
+    command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    stdout: true
+    stdin: true
+
+  -
+    description: Install nu
+    command: cargo install nu
+    stdout: true
+    stdin: true
+
+  -
+    description: Install alacritty
+    command: cargo install alacritty
+    stdout: true
+    stdin: true
+
+  -
+    description: Set alacritty as default terminal
+    command: |
+      sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 50
+    stdout: true
+    stdin: true
+
+  -
+    description: nala exists?
+    command: sudo apt install nala
+    stdout: true
+    stdin: true
+
+  - 
+    description: Install pyenv
+    command: if (which pyenv | is-empty) { curl https://pyenv.run | bash } else { 'pyenv is already installed' }
+    stdout: true
+    stdin: true
+
+  - description: Install pyenv-update
+    command: sh | git clone https://github.com/pyenv/pyenv-update.git $(pyenv root)/plugins/pyenv-update
+    stdout: true
+    stdin: true
+
+  - 
+    description: Install broot
+    command: |
+      cargo install --locked --features clipboard broot
+    stdout: true
+    stdin: true
+
+  - 
+    description: Install zoxide
+    command: |
+      cargo install zoxide --locked
+    stdout: true
+    stdin: true
+
+  -
+    description: Add neovim ppa
+    command: |
+      sudo add-apt-repository ppa:neovim-ppa/unstable
+      sudo apt update
+      sudo nala install -y python-dev python-pip python3-dev python3-pip neovim
+    stdout: true
+    stdin: true
+
+  -
     description: Installing submodules
     command: git submodule update --init --recursive
 
-  - 
-    description: Update apt
-    command: |
-      sudo apt update
-    stdout: true
-    stdin: true
-  - 
-    description: Install packages
-    command: |
-      . apt/install.sh
-    stdout: true
-    stdin: true
