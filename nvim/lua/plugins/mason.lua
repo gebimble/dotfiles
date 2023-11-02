@@ -17,6 +17,9 @@ return {
 
       "codelldb",
       "rust-analyzer",
+
+      "taplo",
+      "yaml-language-server",
     },
   },
 }

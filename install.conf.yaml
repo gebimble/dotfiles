@@ -18,8 +18,8 @@
     ~/.zoxide.nu: .zoxide.nu
 
 - shell:
-    - description: Install rustup
-      command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    - description: copy sudoers.d/ content
+      command: sudo cp sudoers.d/password_feedback /etc/sudoers.d/.
       stdout: true
       stdin: true
 
