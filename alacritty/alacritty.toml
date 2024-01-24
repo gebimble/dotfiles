@@ -1,0 +1,74 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#625e4c"
+blue = "#9d65ff"
+cyan = "#58d1eb"
+green = "#98e024"
+magenta = "#f4005f"
+red = "#f4005f"
+white = "#f6f6ef"
+yellow = "#e0d561"
+
+[colors.normal]
+black = "#1a1a1a"
+blue = "#9d65ff"
+cyan = "#58d1eb"
+green = "#98e024"
+magenta = "#f4005f"
+red = "#f4005f"
+white = "#c4c5b5"
+yellow = "#fa8419"
+
+[colors.primary]
+background = "#1a1a1a"
+foreground = "#c4c5b5"
+
+[cursor.style]
+blinking = "Never"
+shape = "Block"
+
+[cursor.vi_mode_style]
+blinking = "Never"
+shape = "Underline"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "UbuntuMono Nerd Font"
+style = "Medium"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "UbuntuMono Nerd Font"
+style = "Light Italic"
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
+style = "Light"
+
+[font.offset]
+x = 0
+y = 0
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "none"
+dynamic_padding = true
+opacity = 0.9
+startup_mode = "Windowed"
+
+[window.padding]
+x = 5
+y = 5
