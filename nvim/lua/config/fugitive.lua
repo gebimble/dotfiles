@@ -1,4 +1,11 @@
 require("plugins.fugitive")
 
-vim.keymap.set("n", "<leader>ga", ":Git add<CR>")
-vim.keymap.set("n", "<leader>gb", ":Git blame<CR>")
+local wk = require("which-key")
+
+wk.register({
+  g = {
+    a = { "<cmd>Git add .<cr>", "git add all" },
+    l = { "<cmd>Git blame<cr>", "git blame" },
+    b = { "<cmd>Git add %<cr>", "git add current buffer" },
+  },
+}, { prefix = "<leader>" })

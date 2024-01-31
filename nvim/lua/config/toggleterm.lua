@@ -11,10 +11,10 @@ function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }
   vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
   vim.keymap.set("t", "jk", [[<C-\><C-n>]], opts)
-  vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], opts)
-  vim.keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], opts)
-  vim.keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
-  vim.keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], opts)
+  vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<cr>]], opts)
+  vim.keymap.set("t", "<C-j>", [[<Cmd>wincmd j<cr>]], opts)
+  vim.keymap.set("t", "<C-k>", [[<Cmd>wincmd k<cr>]], opts)
+  vim.keymap.set("t", "<C-l>", [[<Cmd>wincmd l<cr>]], opts)
 end
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
@@ -45,10 +45,10 @@ local wk = require("which-key")
 wk.register({
   t = {
     name = "Toggleterm",
-    l = { "<cmd> lua _LAZYGIT_TOGGLE()<CR>", "Open lazygit Terminal" },
-    p = { "<cmd> lua _PYTHON_TOGGLE()<CR>", "Open Python Terminal" },
-    i = { "<cmd> lua _IPYTHON_TOGGLE()<CR>", "Open iPython Terminal" },
-    n = { "<cmd> lua _NCDU_TOGGLE()<CR>", "Open ncdu Terminal" },
-    t = { "<cmd> ToggleTerm<CR>", "Open Terminal" },
+    l = { "<cmd> lua _LAZYGIT_TOGGLE()<cr>", "Open lazygit Terminal" },
+    p = { "<cmd> lua _PYTHON_TOGGLE()<cr>", "Open Python Terminal" },
+    i = { "<cmd> lua _IPYTHON_TOGGLE()<cr>", "Open iPython Terminal" },
+    n = { "<cmd> lua _NCDU_TOGGLE()<cr>", "Open ncdu Terminal" },
+    t = { "<cmd> ToggleTerm<cr>", "Open Terminal" },
   },
 }, { prefix = "<Leader>" })
