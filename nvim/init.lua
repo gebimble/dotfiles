@@ -2,6 +2,7 @@
 require("config.lazy")
 require("config.colorscheme")
 require("config.editor")
+require("config.fugitive")
 require("config.gitsigns")
 require("config.keymaps")
 require("config.lsp")

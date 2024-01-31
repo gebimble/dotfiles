@@ -11,10 +11,6 @@ local map = vim.keymap.set
 -- map jj to <ESC>
 map("i", "jj", "<ESC>", { noremap = true, silent = false })
 
--- change buffer
-map("n", "gn", ":bn<CR>")
-map("n", "gb", ":bp<CR>")
-
 -- window hopping
 map("n", "<C-h>", "<C-w><C-h>", { noremap = true, silent = false })
 map("n", "<C-j>", "<C-w><C-j>", { noremap = true, silent = false })
