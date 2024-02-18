@@ -13,6 +13,7 @@
     ~/.config/nvim: nvim
     ~/.config/nushell: nushell
     ~/.config/pypoetry: pypoetry
+    ~/.rye: rye
     ~/.config/rofi: rofi
     ~/.config/tmux: tmux
     ~/.zoxide.nu: .zoxide.nu
@@ -73,6 +74,12 @@
     - description: Install zoxide
       command: |
         cargo install zoxide --locked
+      stdout: true
+      stdin: true
+
+    - description: Install hyperfine
+      command: |
+        sudo nala install -y hyperfine
       stdout: true
       stdin: true
 

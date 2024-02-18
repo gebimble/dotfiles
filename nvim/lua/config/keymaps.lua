@@ -23,3 +23,6 @@ map("n", "<C-l>", "<C-w><C-l>", { noremap = true, silent = false })
 
 -- close buffer
 map("n", "<leader>qb", ":q<cr>", { noremap = true, silent = false })
+
+vim.keymap.del("n", "H")
+vim.keymap.del("n", "L")

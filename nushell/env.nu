@@ -85,7 +85,7 @@ $env.NU_PLUGIN_DIRS = [
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
- $env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.pyenv/shims','/home/joe/.local/bin','/home/joe/.pyenv/bin','/home/joe/.cargo/bin'])
+$env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.pyenv/shims','/home/joe/.local/bin','/home/joe/.pyenv/bin','/home/joe/.cargo/bin'])
 
 # gitignore function
 def gi [language] {
@@ -100,3 +100,10 @@ def zfslistmonth [pool] {
 def zfsdeletemonth [pool, month] {
   zfs list -r -t snapshot -o name pool | rg -v 'monthly-$(month)' | sudo xargs -n1 zfs destroy -R
   }
+
+# Mojo!
+$env.MODULAR_HOME = '/home/joe/.modular'
+$env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.modular/pkg/packages.modular.com_mojo/bin'])
+
+# rye
+$env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.rye/shims'])

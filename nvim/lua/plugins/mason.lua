@@ -2,6 +2,9 @@ return {
   "williamboman/mason.nvim",
   opts = {
     ensure_installed = {
+      "docker-compose-language-service",
+      "dockerfile-language-server",
+
       "lua-language-server",
       "stylua",
       "shellcheck",
@@ -9,9 +12,10 @@ return {
 
       "json-lsp",
 
-      "python-lsp-server",
-      "black",
-      "flake8",
+      -- "python-lsp-server",
+      -- "black",
+      -- "flake8",
+      "pylyzer",
       "ruff",
       "ruff-lsp",
 
@@ -20,6 +24,11 @@ return {
 
       "taplo",
       "yaml-language-server",
+
+      "latexindent",
+      "texlab",
+      "yaml-language-server",
+      "yamlfmt",
     },
   },
 }
