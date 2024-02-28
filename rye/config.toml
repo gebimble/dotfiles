@@ -1,6 +1,8 @@
 [behavior]
+author = "Joseph Beaver <joseph.beaver@gmail.com>"
 use-uv = true
 global-python = true
+autosyanc = true
 
 [default]
 toolchain = "cpython@3.12"

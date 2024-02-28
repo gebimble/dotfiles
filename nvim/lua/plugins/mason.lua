@@ -15,7 +15,7 @@ return {
       -- "python-lsp-server",
       -- "black",
       -- "flake8",
-      "pylyzer",
+      -- "pylyzer",
       "ruff",
       "ruff-lsp",
 
