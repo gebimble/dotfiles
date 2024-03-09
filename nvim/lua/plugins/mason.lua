@@ -12,10 +12,11 @@ return {
 
       "json-lsp",
 
-      -- "python-lsp-server",
       -- "black",
       -- "flake8",
-      -- "pylyzer",
+      "docformatter",
+      -- "python-lsp-server",
+      "pylyzer",
       "ruff",
       "ruff-lsp",
 

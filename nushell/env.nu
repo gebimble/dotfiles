@@ -107,3 +107,7 @@ $env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.modular/pk
 
 # rye
 $env.PATH = ($env.PATH | split row (char esep) | prepend ['/home/joe/.rye/shims'])
+
+def --env venv [] {
+    $env.VIRTUAL_ENV = $env.PWD + "/.venv"
+  }
