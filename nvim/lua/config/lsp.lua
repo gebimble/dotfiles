@@ -99,18 +99,28 @@ require("lspconfig")["lua_ls"].setup({
   capabilities = capabilities,
 })
 
--- require("lspconfig")["pylsp"].setup({
---   cmd = { "pylsp" },
---   cmd_env = { VIRTUAL_ENV = ".venv" },
+require("lspconfig")["pylsp"].setup({
+  cmd = { "pylsp" },
+  cmd_env = { VIRTUAL_ENV = ".venv" },
+  capabilities = capabilities,
+  init_options = {
+    settings = {
+      interpreter = { ".venv/bin/python" },
+      args = {},
+    },
+  },
+})
+
+-- require("lspconfig")["pylyzer"].setup({
 --   capabilities = capabilities,
---   init_options = {
---     settings = {
---       interpreter = { ".venv/bin/python" },
---       args = {},
---     },
+-- init_options = {
+--   settings = {
+--     interpreter = { vim.env.VIRTUAL_ENV },
+--     args = {},
 --   },
+-- },
 -- })
---
+
 require("lspconfig")["ruff_lsp"].setup({
   capabilities = capabilities,
   -- init_options = {

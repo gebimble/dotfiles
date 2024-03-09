@@ -15,8 +15,8 @@ return {
       -- "black",
       -- "flake8",
       "docformatter",
-      -- "python-lsp-server",
-      "pylyzer",
+      "python-lsp-server",
+      -- "pylyzer",
       "ruff",
       "ruff-lsp",
 

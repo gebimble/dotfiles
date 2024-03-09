@@ -26,3 +26,13 @@ map("n", "<leader>qb", ":q<cr>", { noremap = true, silent = false })
 
 vim.keymap.del("n", "H")
 vim.keymap.del("n", "L")
+
+local wk = require("which-key")
+wk.register({
+  q = {
+    name = "quit/session",
+    b = { "<cmd> q<cr>", "Quit Buffer" },
+    w = { "<cmd> w<cr>", "Save" },
+    x = { "<cmd> x<cr>", "Save and Quit" },
+  },
+}, { prefix = "<Leader>" })

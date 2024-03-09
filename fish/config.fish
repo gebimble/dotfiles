@@ -10,7 +10,7 @@ end
 # <<< conda initialize <<<
 
 # pyenv stuff
-pyenv init - | source
+# pyenv init - | source
 
 # Created by `pipx` on 2022-10-02 16:00:26
 set PATH $PATH /home/joe/.local/bin
