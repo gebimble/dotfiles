@@ -34,23 +34,23 @@ blinking = "Never"
 shape = "Underline"
 
 [font]
-size = 12.0
+size = 10.0
 
 [font.bold]
-family = "UbuntuMono Nerd Font"
-style = "Medium"
+family = "Gintronic Nerd Font"
+style = "Bold"
 
 [font.glyph_offset]
 x = 0
 y = 0
 
 [font.italic]
-family = "UbuntuMono Nerd Font"
-style = "Light Italic"
+family = "Gintronic Nerd Font"
+style = "Italic"
 
 [font.normal]
-family = "UbuntuMono Nerd Font"
-style = "Light"
+family = "Gintronic Nerd Font"
+style = "Medium"
 
 [font.offset]
 x = 0

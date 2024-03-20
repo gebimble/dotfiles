@@ -15,7 +15,7 @@ return {
       vim.api.nvim_create_autocmd("FileType", {
         pattern = "mojo",
         callback = function()
-          local modular = vim.env.MODULAR_HOME
+          local modular = "/home/joe/.modular"
           local lsp_cmd = modular .. "/pkg/packages.modular.com_mojo/bin/mojo-lsp-server"
 
           vim.bo.expandtab = true
