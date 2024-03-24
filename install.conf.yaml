@@ -13,7 +13,6 @@
     ~/.mytheme.omp.json: oh-my-posh/.mytheme.omp.json
     ~/.config/nvim: nvim
     ~/.config/nushell: nushell
-    ~/.config/pypoetry: pypoetry
     ~/.rye: rye
     ~/.config/rofi: rofi
     ~/.config/tmux: tmux
@@ -22,6 +21,16 @@
 - shell:
     - description: copy sudoers.d/ content
       command: sudo cp sudoers.d/password_feedback /etc/sudoers.d/.
+      stdout: true
+      stdin: true
+
+    - description: Install curl
+      command: sudo apt install curl -y
+      stdout: true
+      stdin: true
+
+    - description: install oh-my-posh
+      command: curl -s https://ohmyposh.dev/install.sh | sudo bash -s
       stdout: true
       stdin: true
 
@@ -35,8 +44,13 @@
       stdout: true
       stdin: true
 
+    - description: install build-essential
+      command: sudo nala install build-essential -y
+      stdout: true
+      stdin: true
+
     - description: Install small utilies
-      command: sudo nala install xclip -y
+      command: sudo nala install xclip rofi tmux fortune cowsay fortune-mod gh -y
       stdout: true
       stdin: true
 
@@ -52,6 +66,11 @@
 
     - description: Install exa
       command: cargo install exa
+      stdout: true
+      stdin: true
+
+    - description: Install alacritty dependencies
+      command: apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
       stdout: true
       stdin: true
 
@@ -87,6 +106,15 @@
     - description: Install rye
       command: |
         curl -sSf https://rye-up.com/get | bash
+      stdout: true
+      stdin: true
+
+    - description: Install lazygit
+      command: |
+        LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+        curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+        tar xf lazygit.tar.gz lazygit
+        sudo install lazygit /usr/local/bin
       stdout: true
       stdin: true
 
