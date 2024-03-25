@@ -12,11 +12,8 @@ return {
 
       "json-lsp",
 
-      -- "black",
-      -- "flake8",
       "docformatter",
       "python-lsp-server",
-      -- "pylyzer",
       "ruff",
       "ruff-lsp",
 

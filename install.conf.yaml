@@ -13,7 +13,7 @@
     ~/.mytheme.omp.json: oh-my-posh/.mytheme.omp.json
     ~/.config/nvim: nvim
     ~/.config/nushell: nushell
-    ~/.rye: rye
+    ~/.rye/config.toml: rye/config.toml
     ~/.config/rofi: rofi
     ~/.config/tmux: tmux
     ~/.zoxide.nu: .zoxide.nu
@@ -50,7 +50,7 @@
       stdin: true
 
     - description: Install small utilies
-      command: sudo nala install xclip rofi tmux fortune cowsay fortune-mod gh -y
+      command: sudo nala install xclip rofi tmux cowsay fortune-mod gh fzf -y
       stdout: true
       stdin: true
 
@@ -59,13 +59,23 @@
       stdout: true
       stdin: true
 
+    - description: Install lolcrab
+      command: cargo install lolcrab
+      stdout: true
+      stdin: true
+
     - description: Install ripgrep
       command: cargo install ripgrep
       stdout: true
       stdin: true
 
-    - description: Install exa
-      command: cargo install exa
+    - description: Install sd
+      command: cargo install sd
+      stdout: true
+      stdin: true
+
+    - description: Install eza
+      command: cargo install eza
       stdout: true
       stdin: true
 
@@ -97,9 +107,27 @@
       stdout: true
       stdin: true
 
+    - description: Install fd
+      command: |
+        cargo install fd-find
+      stdout: true
+      stdin: true
+
+    - description: Install du
+      command: |
+        cargo install du-dust
+      stdout: true
+      stdin: true
+
+    - description: Install bat
+      command: |
+        cargo install bat --locked
+      stdout: true
+      stdin: true
+
     - description: Install hyperfine
       command: |
-        sudo nala install -y hyperfine
+        cargo install --locked hyperfine
       stdout: true
       stdin: true
 
