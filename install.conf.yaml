@@ -1,5 +1,6 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - link:
@@ -56,6 +57,14 @@
 
     - description: Install fish
       command: sudo nala install fish -y
+      stdout: true
+      stdin: true
+
+    - description: Install tmuxify
+      command: |
+        git clone git@github.com:jimeh/tmuxifier.git ~/.tmuxifier &&
+        fish_add_path "~/.tmuxifier/bin" &&
+        echo "eval (tmuxifier init -)" >> ~/.config/fish/config.fish
       stdout: true
       stdin: true
 
@@ -139,9 +148,9 @@
 
     - description: Install lazygit
       command: |
-        LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-        curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-        tar xf lazygit.tar.gz lazygit
+        LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*') &&
+        curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz" &&
+        tar xf lazygit.tar.gz lazygit &&
         sudo install lazygit /usr/local/bin
       stdout: true
       stdin: true

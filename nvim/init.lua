@@ -1,7 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-require("config.transparent")
 require("config.keymaps")
+require("config.transparent")
 require("config.colorscheme")
 require("config.treesitter")
 require("config.treesitter-context")
@@ -19,3 +19,4 @@ require("config.neoscroll")
 -- require("config.nvim-nu")
 require("config.rust-tools")
 require("config.toggleterm")
+require("config.vim-test")

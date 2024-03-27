@@ -15,12 +15,6 @@ map("i", "jj", "<ESC>", { noremap = true, silent = false })
 map("n", "gn", ":bn<cr>")
 map("n", "gb", ":bp<cr>")
 
--- window hopping
-map("n", "<C-h>", "<C-w><C-h>", { noremap = true, silent = false })
-map("n", "<C-j>", "<C-w><C-j>", { noremap = true, silent = false })
-map("n", "<C-k>", "<C-w><C-k>", { noremap = true, silent = false })
-map("n", "<C-l>", "<C-w><C-l>", { noremap = true, silent = false })
-
 -- close buffer
 map("n", "<leader>qb", ":q<cr>", { noremap = true, silent = false })
 
