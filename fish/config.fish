@@ -2,7 +2,7 @@
 oh-my-posh init fish | source
 
 function fish_greeting
-    fortune | cowsay -s | lolcat
+    fortune | cowsay -s | lolcrab -g magma
 end
 
 if status is-interactive
