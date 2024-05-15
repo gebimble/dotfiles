@@ -24,6 +24,19 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
 
+      cmp.setup({
+        enabled = function()
+          -- disable completion in strings or comments
+          local context = require("cmp.config.context")
+          -- keep command mode completion enabled when cursor is in a comment
+          if vim.api.nvim_get_mode().mode == "c" then
+            return true
+          else
+            return not context.in_treesitter_capture("string") and not context.in_treesitter_capture("comment")
+          end
+        end,
+      })
+
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then

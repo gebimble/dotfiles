@@ -1,5 +1,6 @@
 [behavior]
 author = "Joseph Beaver <joseph.beaver@gmail.com>"
+# use-uv = false
 use-uv = true
 global-python = true
 autosyanc = true

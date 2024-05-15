@@ -16,12 +16,27 @@
     ~/.config/nushell: nushell
     ~/.rye/config.toml: rye/config.toml
     ~/.config/rofi: rofi
-    ~/.config/tmux: tmux
+    ~/.config/tmux: ~/.tmux.conf
     ~/.zoxide.nu: .zoxide.nu
 
 - shell:
     - description: copy sudoers.d/ content
       command: sudo cp sudoers.d/password_feedback /etc/sudoers.d/.
+      stdout: true
+      stdin: true
+
+    - description: Install nala
+      command: sudo apt install nala -y
+      stdout: true
+      stdin: true
+
+    - description: Install fish
+      command: sudo nala install fish -y
+      stdout: true
+      stdin: true
+
+    - description: Set fish as default shell
+      command: sudo chsh -s /usr/bin/fish
       stdout: true
       stdin: true
 
@@ -40,11 +55,6 @@
       stdout: true
       stdin: true
 
-    - description: Install nala
-      command: sudo apt install nala -y
-      stdout: true
-      stdin: true
-
     - description: install build-essential
       command: sudo nala install build-essential -y
       stdout: true
@@ -55,8 +65,8 @@
       stdout: true
       stdin: true
 
-    - description: Install fish
-      command: sudo nala install fish -y
+    - description: Install tmux package manager
+      command: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       stdout: true
       stdin: true
 
