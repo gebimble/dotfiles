@@ -1,8 +1,8 @@
 # oh-my-posh
-oh-my-posh init fish | source
+oh-my-posh init fish --config ~/.mytheme.omp.json | source
 
 function fish_greeting
-    fortune | cowsay -s | lolcrab -g spectral
+    fortune | cowsay -s | lolcrab -g viridis
 end
 
 if status is-interactive

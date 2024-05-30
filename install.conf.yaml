@@ -8,12 +8,14 @@
     ~/.config/broot: broot
     ~/.config/fish: fish
     ~/.config/gh: gh
+    ~/.config/i3: i3
     ~/.gitconfig: .gitconfig
     ~/.config/lazygit: lazygit
     ~/.oh-my-posh.nu: oh-my-posh/.oh-my-posh.nu
     ~/.mytheme.omp.json: oh-my-posh/.mytheme.omp.json
     ~/.config/nvim: nvim
     ~/.config/nushell: nushell
+    ~/.config/polybar: polybar
     ~/.rye/config.toml: rye/config.toml
     ~/.config/rofi: rofi
     ~/.config/tmux: ~/.tmux.conf
