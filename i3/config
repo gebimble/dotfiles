@@ -16,7 +16,7 @@ exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 # background
-exec_always feh --bg-scale ~/Pictures/Wallpaper/foggy-mont-saint-michel-5120x1440.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpaper/city-storm-5120x1440.jpg
 
 # picom
 exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
