@@ -15,6 +15,7 @@
     ~/.mytheme.omp.json: oh-my-posh/.mytheme.omp.json
     ~/.config/nvim: nvim
     ~/.config/nushell: nushell
+    ~/.config/picom: picom
     ~/.config/polybar: polybar
     ~/.rye/config.toml: rye/config.toml
     ~/.config/rofi: rofi
@@ -62,6 +63,11 @@
       stdout: true
       stdin: true
 
+    - description: Install i3 etc.
+      command: sudo nala i3 picom polybar -y
+      stdout: true
+      stdin: true
+    
     - description: Install small utilies
       command: sudo nala install xclip rofi tmux cowsay fortune-mod gh fzf -y
       stdout: true
