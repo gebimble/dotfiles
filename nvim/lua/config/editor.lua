@@ -1,12 +1,12 @@
-require("illuminate").configure({
-  opts = {
-    delay = 200,
-    large_file_cutoff = 2000,
-    large_file_overrides = {
-      providers = { "lsp" },
-    },
-  },
-})
+-- require("illuminate").configure({
+--   opts = {
+--     delay = 200,
+--     large_file_cutoff = 2000,
+--     large_file_overrides = {
+--       providers = { "lsp" },
+--     },
+--   },
+-- })
 
 -- change the highlight style
 vim.api.nvim_set_hl(0, "IlluminatedWordText", { link = "Visual", standout = true })
