@@ -1,11 +1,14 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/joe/dotfiles
-- /home/joe/Documents/dash_calc
-- /home/joe/Documents/libraries-io-scraper
-- /home/joe/Documents/rust-projects/guessing_game
-- /home/joe/Documents/bl-visualiser
+    - /home/joe/dotfiles
+    - /home/joe/Documents/libraries-io-scraper
 startuppopupversion: 5
+lastversion: 0.42.0
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
