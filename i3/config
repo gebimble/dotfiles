@@ -15,15 +15,10 @@ set $mod Mod4
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
-<<<<<<< HEAD
-# background
-# exec_always feh --bg-scale ~/Pictures/Wallpaper/city-storm-5120x1440.jpg
-exec_always feh --bg-scale ~/Pictures/Wallpaper/685929.png
-=======
 # background and resolution
-exec_always feh --bg-scale ~/Pictures/Wallpaper/city-storm-5120x1440.jpg
-exec_always xrandr -r 5120x1440
->>>>>>> a1cff647960c514c3b00897b9b786dd094cb5375
+# exec_always feh --bg-scale ~/Pictures/Wallpaper/city-storm-5120x1440.jpg
+# exec_always xrandr -r 5120x1440
+exec_always feh --bg-scale ~/Pictures/Wallpaper/685929.png
 
 # picom
 exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
