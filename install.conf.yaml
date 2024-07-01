@@ -19,7 +19,7 @@
     ~/.config/polybar: polybar
     ~/.rye/config.toml: rye/config.toml
     ~/.config/rofi: rofi
-    ~/.config/tmux: ~/.tmux.conf
+    ~/.config/tmux/.tmux.conf: ~/.tmux.conf
     ~/.config/xprofile/.xprofile: ~/.xprofile
     ~/.zoxide.nu: .zoxide.nu
 

@@ -22,3 +22,6 @@ zoxide init fish | source
 # tmuxifier
 eval (tmuxifier init - fish)
 alias tmx="tmuxifier load-session development"
+
+# Set up fzf key bindings
+fzf --fish | source
