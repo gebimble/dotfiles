@@ -42,13 +42,11 @@ function _NCDU_TOGGLE()
 end
 
 local wk = require("which-key")
-wk.register({
-  t = {
-    name = "Toggleterm",
-    l = { "<cmd> lua _LAZYGIT_TOGGLE()<cr>", "Open lazygit Terminal" },
-    p = { "<cmd> lua _PYTHON_TOGGLE()<cr>", "Open Python Terminal" },
-    i = { "<cmd> lua _IPYTHON_TOGGLE()<cr>", "Open iPython Terminal" },
-    n = { "<cmd> lua _NCDU_TOGGLE()<cr>", "Open ncdu Terminal" },
-    t = { "<cmd> ToggleTerm<cr>", "Open Terminal" },
-  },
-}, { prefix = "<Leader>" })
+wk.add({
+  { "<Leader>t", group = "Toggleterm" },
+  { "<Leader>ti", "<cmd> lua _IPYTHON_TOGGLE()<cr>", desc = "Open iPython Terminal" },
+  { "<Leader>tl", "<cmd> lua _LAZYGIT_TOGGLE()<cr>", desc = "Open lazygit Terminal" },
+  { "<Leader>tn", "<cmd> lua _NCDU_TOGGLE()<cr>", desc = "Open ncdu Terminal" },
+  { "<Leader>tp", "<cmd> lua _PYTHON_TOGGLE()<cr>", desc = "Open Python Terminal" },
+  { "<Leader>tt", "<cmd> ToggleTerm<cr>", desc = "Open Terminal" },
+})

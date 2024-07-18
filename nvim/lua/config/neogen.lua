@@ -6,11 +6,9 @@ require("neogen").setup({
 
 local wk = require("which-key")
 
-wk.register({
-  n = {
-    f = { "<cmd>Neogen func<cr>", "Annotate file" },
-    t = { "<cmd>Neogen type<cr>", "Annotate  type" },
-    i = { "<cmd>Neogen file<cr>", "Annotate function" },
-    c = { "<cmd>Neogen class<cr>", "Annotate class" },
-  },
-}, { prefix = "<leader>" })
+wk.add({
+  { "<leader>nc", "<cmd>Neogen class<cr>", desc = "Annotate class" },
+  { "<leader>nf", "<cmd>Neogen func<cr>", desc = "Annotate file" },
+  { "<leader>ni", "<cmd>Neogen file<cr>", desc = "Annotate function" },
+  { "<leader>nt", "<cmd>Neogen type<cr>", desc = "Annotate type" },
+})

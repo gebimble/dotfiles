@@ -22,11 +22,10 @@ vim.keymap.del("n", "H")
 vim.keymap.del("n", "L")
 
 local wk = require("which-key")
-wk.register({
-  q = {
-    name = "quit/session",
-    b = { "<cmd> q<cr>", "Quit Buffer" },
-    w = { "<cmd> w<cr>", "Save" },
-    x = { "<cmd> x<cr>", "Save and Quit" },
-  },
-}, { prefix = "<Leader>" })
+
+wk.add({
+  { "<Leader>q", group = "quit/session" },
+  { "<Leader>qb", "<cmd> q<cr>", desc = "Quit Buffer" },
+  { "<Leader>qw", "<cmd> w<cr>", desc = "Save" },
+  { "<Leader>qx", "<cmd> x<cr>", desc = "Save and Quit" },
+})
