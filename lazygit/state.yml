@@ -1,8 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/joe/dotfiles
-    - /home/joe/Documents/rustlings
+    - /home/joe/Documents/resume
     - /home/joe/Documents/libraries-io-scraper
+    - /home/joe/Documents/rustlings
 startuppopupversion: 5
 lastversion: 0.42.0
 customcommandshistory: []

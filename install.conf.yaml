@@ -22,7 +22,9 @@
     ~/.config/tmux/.tmux.conf: ~/.tmux.conf
     ~/.config/xprofile/.xprofile: ~/.xprofile
     ~/.zoxide.nu: .zoxide.nu
+    ~//etc/X11/xorg.conf.d/.90-touchpad.conf: 90-touchpad.conf
 
+# TODO: put something in about ulauncher and nix-env
 - shell:
     - description: copy sudoers.d/ content
       command: sudo cp sudoers.d/password_feedback /etc/sudoers.d/.
