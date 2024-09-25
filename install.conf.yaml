@@ -23,6 +23,9 @@
     ~/.config/xprofile/.xprofile: ~/.xprofile
     ~/.zoxide.nu: .zoxide.nu
     ~//etc/X11/xorg.conf.d/.90-touchpad.conf: 90-touchpad.conf
+    ~/.config/hypr: hypr
+    ~/.config/hyprpaper: hyprpaper
+    ~/.config/waybar: waybar
 
 # TODO: put something in about ulauncher and nix-env
 - shell:
