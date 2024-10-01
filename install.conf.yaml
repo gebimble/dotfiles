@@ -10,11 +10,15 @@
     ~/.config/gh: gh
     ~/.config/i3: i3
     ~/.gitconfig: .gitconfig
+    ~/.config/home-manager: home-manager
+    ~/.config/hypr: hypr
+    ~/.config/hyprpaper: hyprpaper
+    ~/.config/kitty: kitty
     ~/.config/lazygit: lazygit
     ~/.oh-my-posh.nu: oh-my-posh/.oh-my-posh.nu
     ~/.mytheme.omp.json: oh-my-posh/.mytheme.omp.json
-    ~/.config/nvim: nvim
     ~/.config/nushell: nushell
+    ~/.config/nvim: nvim
     ~/.config/picom: picom
     ~/.config/polybar: polybar
     ~/.rye/config.toml: rye/config.toml
@@ -23,9 +27,8 @@
     ~/.config/xprofile/.xprofile: ~/.xprofile
     ~/.zoxide.nu: .zoxide.nu
     ~//etc/X11/xorg.conf.d/.90-touchpad.conf: 90-touchpad.conf
-    ~/.config/hypr: hypr
-    ~/.config/hyprpaper: hyprpaper
     ~/.config/waybar: waybar
+    ~/.config/zellij: zellij
 
 # TODO: put something in about ulauncher and nix-env
 - shell:
