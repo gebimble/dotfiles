@@ -13,16 +13,16 @@
       "alignment": "left",
       "segments": [
         {
-          "style": "plain",
           "template": "{{.Icon}} ",
           "foreground": "p:os",
-          "type": "os"
+          "type": "os",
+          "style": "plain"
         },
         {
-          "style": "plain",
           "template": "{{ .UserName }}@{{ .HostName }} ",
           "foreground": "p:blue",
-          "type": "session"
+          "type": "session",
+          "style": "plain"
         },
         {
           "properties": {
@@ -30,10 +30,10 @@
             "home_icon": "~",
             "style": "agnoster_short"
           },
-          "style": "plain",
           "template": "{{ .Path }} ",
           "foreground": "p:pink",
-          "type": "path"
+          "type": "path",
+          "style": "plain"
         },
         {
           "properties": {
@@ -48,16 +48,16 @@
             "revert_icon": "\uf0e2 ",
             "tag_icon": "\uf412 "
           },
-          "style": "plain",
           "template": "{{ .HEAD }} ",
           "foreground": "p:lavender",
-          "type": "git"
+          "type": "git",
+          "style": "plain"
         },
         {
-          "style": "plain",
           "template": "\uf105",
           "foreground": "p:closer",
-          "type": "text"
+          "type": "text",
+          "style": "plain"
         }
       ]
     }
