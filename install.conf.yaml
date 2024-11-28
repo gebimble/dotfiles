@@ -30,7 +30,7 @@
     ~/.config/waybar: waybar
     ~/.config/zellij: zellij
 
-# TODO: put something in about ulauncher and nix-env
+# TODO: put something in about wofi
 - shell:
     - description: copy sudoers.d/ content
       command: sudo cp sudoers.d/password_feedback /etc/sudoers.d/.
@@ -49,6 +49,15 @@
 
     - description: Set fish as default shell
       command: sudo chsh -s /usr/bin/fish
+      stdout: true
+      stdin: true
+
+    - description: Install nix
+      command: |
+        fish &&
+        sudo install -d -m755 -o $(id -u) -g $(id -g) /nix &&
+        curl -L https://nixos.org/nix/install | sh &&
+        . /home/joe/.nix-profile/etc/profile.d/nix.fish
       stdout: true
       stdin: true
 
