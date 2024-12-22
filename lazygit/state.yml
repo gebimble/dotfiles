@@ -1,9 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/joe/dotfiles
-- /home/joe/Documents/libraries-io-scraper
+    - /home/joe/dotfiles
+    - /home/joe/Documents/libraries-io-scraper
 startuppopupversion: 5
-lastversion: 0.41.0
+lastversion: 0.42.0
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false
