@@ -29,3 +29,9 @@ wk.add({
   { "<Leader>qw", "<cmd> w<cr>", desc = "Save" },
   { "<Leader>qx", "<cmd> x<cr>", desc = "Save and Quit" },
 })
+
+wk.add({
+  { "<Leader>o", group = "Obsidian" },
+  { "<Leader>on", "<cmd> ObsidianLinkNew<cr>", desc = "Obsidian New Link" },
+  { "<Leader>of", "<cmd> ObsidianFollowLink<cr>", desc = "Obsidian Follow Link" },
+})

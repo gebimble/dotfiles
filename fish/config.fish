@@ -25,3 +25,5 @@ alias tmx="tmuxifier load-session development"
 
 # Set up fzf key bindings
 fzf --fish | source
+uv generate-shell-completion fish | source
+uvx --generate-shell-completion fish | source
